@@ -1,0 +1,18 @@
+total 136
+drwxr-xr-x@ 17 zhua  staff    544 May 26 17:27 .
+drwxr-xr-x@ 17 zhua  staff    544 May 21 23:03 ..
+drwxr-xr-x@  6 zhua  staff    192 May  5 14:48 .idea
+-rw-r--r--@  1 zhua  staff      0 May 26 17:27 file.txt
+-rw-r--r--@  1 zhua  staff    127 May 26 17:08 file1.txt
+-rw-r--r--@  1 zhua  staff    127 May 26 17:20 file2.txt
+-rw-r--r--@  1 zhua  staff      8 May 26 17:25 file4.txt
+-rw-r--r--@  1 zhua  staff     81 May  5 14:39 makefile
+-rwxr-xr-x@  1 zhua  staff  14024 May  5 14:45 myshell
+-rw-r--r--@  1 zhua  staff   7275 May 26 17:24 myshell.c
+-rw-r--r--@  1 zhua  staff    356 May  5 14:39 myshell.h
+-rw-r--r--@  1 zhua  staff   2534 May  5 14:40 myshell1.c
+-rw-r--r--@  1 zhua  staff    300 May  5 14:48 os1.iml
+-rw-r--r--@  1 zhua  staff    135 May 26 12:45 primer.txt
+-rw-r--r--@  1 zhua  staff     30 May  5 14:49 prosto.txt
+-rw-r--r--@  1 zhua  staff   1891 May  5 14:48 readme.txt
+-rw-r--r--@  1 zhua  staff   2288 May  5 14:45 utility.c
