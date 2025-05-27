@@ -1,0 +1,26 @@
+void *worker(void *arg) {
+    while (1) {
+        sem_wait(&queue.has_tasks);
+
+        pthread_mutex_lock(&queue.lock);
+        if (queue.shutdown) {
+            pthread_mutex_unlock(&queue.lock);
+            break;
+        }
+
+        // Копируем задачу из очереди
+        Task task = queue.tasks[queue.front];
+
+        // Обнуляем слот в очереди сразу после взятия задачи
+        queue.tasks[queue.front].function = NULL;
+        queue.tasks[queue.front].arg = NULL;
+
+        queue.front = (queue.front + 1) % QUEUE_SIZE;
+        queue.count--;
+        pthread_mutex_unlock(&queue.lock);
+
+        // Выполняем задачу вне критической секции
+        task.function(task.arg);
+    }
+    return NULL;
+}
